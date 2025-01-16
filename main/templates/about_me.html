@@ -3,12 +3,14 @@
 {% block title %}About Me{% endblock %}
 
 {% block content %}
+
 <div class="text-center">
     <h1 class="mb-4">About Me</h1>
-    <!-- Use your profile picture -->
-    <img src="https://github.com/marcelloamr/portfolio/blob/main/main/static/profile.jpeg?raw=true" alt="Profile Picture" 
-     class="rounded-circle mb-3"
-     style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #007bff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"><p>
+    <img src="https://github.com/marcelloamr/portfolio/blob/main/main/static/profile.jpeg?raw=true" 
+         alt="Profile Picture" 
+         class="rounded-circle mb-3"
+         style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #007bff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <p>
         Hello! I am Marcello Antony, a passionate <strong>QA Engineer</strong> currently working at 
         <strong>Banco de Brasília (BRB)</strong>. I specialize in testing web applications using tools like 
         <strong>Selenium</strong> and <strong>Cypress</strong>. With experience in Python and Robot Framework, 
@@ -17,13 +19,25 @@
     <p>
         I enjoy working in inclusive and collaborative environments that encourage innovation and growth.
     </p>
-    <p>
-        When I’m not working, I love exploring technology, learning new frameworks, and improving my skills.
-    </p>
     <div class="d-flex justify-content-center mt-4">
-        <a href="/experience/" class="btn btn-primary mx-2">My Experience</a>
-        <a href="/education/" class="btn btn-secondary mx-2">My Education</a>
-        <a href="/skills/" class="btn btn-success mx-2">My Skills</a>
+        <!-- Updated buttons with icons -->
+        <a href="/experience/" class="btn btn-primary mx-2">
+            <i class="fas fa-briefcase"></i> My Experience
+        </a>
+        <a href="/education/" class="btn btn-secondary mx-2">
+            <i class="fas fa-graduation-cap"></i> My Education
+        </a>
+        <a href="/skills/" class="btn btn-success mx-2">
+            <i class="fas fa-cogs"></i> My Skills
+        </a>
+    </div>
+    <div class="mt-4">
+        <a href="https://github.com/marcelloamr" class="btn btn-dark mx-2">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/marcelloamr/" class="btn btn-primary mx-2">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
     </div>
 </div>
 {% endblock %}
