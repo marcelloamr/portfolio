@@ -1,21 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-</head>
-<body>
-    <header>
-        <h1>About Me</h1>
-    </header>
-    <section>
-        <p>I am Marcello Antony, currently working as a QA Engineer at BRB (Banco de Brasília) in Brazil, specifically within the NUTEB (Núcleo de Testes em Baixa Plataforma). My expertise lies in web testing, utilizing tools such as Selenium, Cypress, and frameworks like Robot, alongside programming languages like C and Python. In addition to my strong technical foundation, I bring a unique perspective as an individual with autism. This characteristic enhances my ability to concentrate, be creative, and remain dedicated, leading to consistent and impactful achievements. I excel in both collaborative team environments and when working independently. My professional philosophy is centered around the core values of inclusion and diversity, which I believe are essential in any workplace. I am committed to fostering a welcoming and inclusive environment for all team members. Driven by a passion for challenges and a continuous desire for learning, I am a proactive professional eager to explore new growth opportunities. I am confident in my ability to make a significant contribution to any team and am enthusiastic about advancing my field through meaningful work.</p>
-    </section>
-    <nav>
-        <a href="/experience/">Experience</a> |
-        <a href="/education/">Education</a> |
-        <a href="/skills/">Skills</a>
-    </nav>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}About Me{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1 class="mb-4">About Me</h1>
+    <!-- Use your profile picture -->
+    <img src="/static/profile.jpeg" alt="Profile Picture" 
+     class="rounded-circle mb-3"
+     style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #007bff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"><p>
+        Hello! I am Marcello Antony, a passionate <strong>QA Engineer</strong> currently working at 
+        <strong>Banco de Brasília (BRB)</strong>. I specialize in testing web applications using tools like 
+        <strong>Selenium</strong> and <strong>Cypress</strong>. With experience in Python and Robot Framework, 
+        I am dedicated to delivering high-quality solutions and ensuring exceptional system performance.
+    </p>
+    <p>
+        I enjoy working in inclusive and collaborative environments that encourage innovation and growth.
+    </p>
+    <p>
+        When I’m not working, I love exploring technology, learning new frameworks, and improving my skills.
+    </p>
+    <div class="d-flex justify-content-center mt-4">
+        <a href="/experience/" class="btn btn-primary mx-2">My Experience</a>
+        <a href="/education/" class="btn btn-secondary mx-2">My Education</a>
+        <a href="/skills/" class="btn btn-success mx-2">My Skills</a>
+    </div>
+</div>
+{% endblock %}

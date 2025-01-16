@@ -1,24 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills</title>
-</head>
-<body>
-    <header>
-        <h1>Skills</h1>
-    </header>
-    <section>
-        <ul>
-            <li>Proficiency in Selenium, Cypress, and Python</li>
-            <li>Extensive experience in web testing</li>
-        </ul>
-    </section>
-    <nav>
-        <a href="/">About Me</a> |
-        <a href="/experience/">Experience</a> |
-        <a href="/education/">Education</a>
-    </nav>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}Skills{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Skills</h1>
+<ul class="list-group">
+    <li class="list-group-item">Extensive experience in quality assurance and web testing</li>
+    <li class="list-group-item">Proficiency in Selenium, Cypress, Robot, and Python</li>
+    <li class="list-group-item">In-depth understanding of system integration and debugging</li>
+    <li class="list-group-item">Excellent communication and teamwork abilities</li>
+    <li class="list-group-item">Strong problem-solving skills</li>
+</ul>
+{% endblock %}

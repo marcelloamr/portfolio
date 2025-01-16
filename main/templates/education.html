@@ -1,24 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education</title>
-</head>
-<body>
-    <header>
-        <h1>Education</h1>
-    </header>
-    <section>
-        <ul>
-            <li>MBA: Software Quality Management...</li>
-            <li>MBA: System Development with Java...</li>
-        </ul>
-    </section>
-    <nav>
-        <a href="/">About Me</a> |
-        <a href="/experience/">Experience</a> |
-        <a href="/skills/">Skills</a>
-    </nav>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}Education{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Education</h1>
+<ul class="list-group">
+    <li class="list-group-item">
+        <strong>MBA:</strong> Software Quality Management (Jan 2025, UniBF)
+    </li>
+    <li class="list-group-item">
+        <strong>MBA:</strong> System Development with Java (Jan 2025, UniBF)
+    </li>
+    <li class="list-group-item">
+        <strong>MBA:</strong> Information Security (Mar 2022, Descomplica)
+    </li>
+    <li class="list-group-item">
+        <strong>Bachelor's Degree:</strong> Information Technology (Jul 2021, UNIASSELVI)
+    </li>
+    <li class="list-group-item">
+        <strong>Bachelor's Degree:</strong> Mathematics (Dec 2020, Etep University Center)
+    </li>
+</ul>
+{% endblock %}
