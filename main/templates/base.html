@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}My Portfolio{% endblock %}</title>
+    <title>Marcello Antony</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -19,33 +19,41 @@
         .navbar-toggler-icon {
             background-color: white;
         }
-        .google-translate-container {
+        .language-button-container {
             display: flex;
-            justify-content: flex-end;
+            justify-content: flex-end; /* Align button to the right by default */
+        }
+        .language-button {
+            display: flex;
             align-items: center;
+            gap: 5px;
             color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
         }
-        .navbar-collapse.show .google-translate-container {
-            justify-content: center;
-            margin-top: 10px;
+        .language-button:hover {
+            background-color: white;
+            color: #007bff;
         }
-        @media (max-width: 576px) {
-            .google-translate-container.desktop-only {
-                display: none; /* Hide on mobile */
-            }
-            .google-translate-container.mobile-only {
-                display: flex; /* Show in navbar on mobile */
-            }
-        }
-        @media (min-width: 577px) {
-            .google-translate-container.mobile-only {
-                display: none; /* Hide on desktop */
-            }
+        .flag-icon {
+            height: 20px;
+            width: auto;
         }
         footer {
             margin-top: 20px;
             background-color: #f8f9fa;
             padding: 10px;
+        }
+        @media (max-width: 576px) {
+            .language-button-container {
+                justify-content: center; /* Center button on mobile */
+            }
+            .language-button {
+                width: auto; /* Ensure button width adjusts to its content */
+            }
         }
     </style>
 </head>
@@ -63,10 +71,15 @@
                     <li class="nav-item"><a class="nav-link" href="/education/">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="/skills/">Skills</a></li>
                 </ul>
-                <!-- Google Translate for Desktop -->
-                <div id="google_translate_element" class="google-translate-container desktop-only ms-auto"></div>
-                <!-- Google Translate for Mobile -->
-                <div id="google_translate_element_mobile" class="google-translate-container mobile-only"></div>
+                <!-- Language Button -->
+                <div class="language-button-container ms-auto">
+                    <a href="https://portfolio--aqf2-onrender-com.translate.goog/?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp" 
+                       class="language-button">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" alt="Brazil Flag" class="flag-icon">
+                        <span>Português</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg" alt="Portugal Flag" class="flag-icon">
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
@@ -79,22 +92,5 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function googleTranslateElementInit() {
-            // For Desktop
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'en,pt,es,zh-CN,hi,de,fr,it,ru,nl,pl,uk,ro,el,hu,cs,sv,fi,da,bg,sk,hr,sr,sl,lt,lv,et,ga',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-            // For Mobile
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'en,pt,es,zh-CN,hi,de,fr,it,ru,nl,pl,uk,ro,el,hu,cs,sv,fi,da,bg,sk,hr,sr,sl,lt,lv,et,ga',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element_mobile');
-        }
-    </script>
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
