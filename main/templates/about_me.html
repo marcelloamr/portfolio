@@ -20,10 +20,6 @@
         I am passionate about fostering an inclusive environment and thrive in both collaborative and independent roles. 
         My commitment to learning and overcoming challenges drives my contributions to any team.
     </p>
-    <!-- Translation Button -->
-    <div class="text-end">
-        <div id="google_translate_element"></div>
-    </div>
     <div class="d-flex justify-content-center mt-4">
         <a href="/experience/" class="btn btn-primary mx-2">
             <i class="fas fa-briefcase"></i> My Experience
@@ -49,12 +45,9 @@
         <a href="https://wa.me/5531983335146" target="_blank" rel="noopener noreferrer" class="text-success">
             <i class="fab fa-whatsapp fa-lg"></i> WhatsApp: +55 31 9 8333 5146
         </a><br>
-        <!-- Email with Styled Copy Button -->
+        <!-- Email -->
         <i class="fas fa-envelope"></i> E-mail: 
-        <a href="mailto:marcello.antonymr@gmail.com">marcello.antonymr@gmail.com</a>
-        <button class="btn btn-sm btn-primary ms-2" onclick="copyToClipboard('marcello.antonymr@gmail.com')" style="border-radius: 12px;">
-            <i class="fas fa-copy"></i> Copy
-        </button><br>
+        <a href="mailto:marcello.antonymr@gmail.com">marcello.antonymr@gmail.com</a><br>
         <!-- Google Maps Miniature -->
         <i class="fas fa-map-marker-alt"></i> Location: Brasil<br>
         <iframe 
@@ -68,24 +61,4 @@
         </iframe>
     </p>
 </div>
-
-<script>
-    // JavaScript to Copy Email to Clipboard
-    function copyToClipboard(text) {
-        navigator.clipboard.writeText(text).then(() => {
-            const button = event.target;
-            button.style.backgroundColor = 'green';
-            button.innerHTML = '<i class="fas fa-check"></i> Copied!';
-        }).catch(err => {
-            alert('Failed to copy email: ' + err);
-        });
-    }
-</script>
-<script type="text/javascript">
-    // Google Translate
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-    }
-</script>
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 {% endblock %}

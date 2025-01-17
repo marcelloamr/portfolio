@@ -3,15 +3,71 @@
 {% block title %}Skills{% endblock %}
 
 {% block content %}
-<h1 class="mb-4">Skills</h1>
-<ul class="list-group">
-    <li class="list-group-item">Extensive experience in quality assurance and web testing</li>
-    <li class="list-group-item">Proficiency in Selenium, Cypress, Robot, and Python</li>
-    <li class="list-group-item">In-depth understanding of system integration and debugging</li>
-    <li class="list-group-item">Excellent communication and teamwork abilities</li>
-    <li class="list-group-item">Strong problem-solving skills</li>
-</ul>
-<a href="/" class="btn btn-primary mt-4">
-    <i class="fas fa-arrow-left"></i> Back to Home
-</a>
+<div class="container mt-5">
+    <h1 class="text-center mb-5">Skills</h1>
+    <div class="row justify-content-center">
+        <!-- Languages -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm text-center">
+                <div class="card-body">
+                    <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                    <h4 class="card-title">Programming Languages</h4>
+                    <ul class="list-unstyled mt-3">
+                        <li><i class="fas fa-check-circle text-success"></i> <strong>Python</strong></li>
+                        <li><i class="fas fa-check-circle text-success"></i> <strong>C</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Frameworks & Tools -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm text-center">
+                <div class="card-body">
+                    <i class="fas fa-tools fa-3x text-primary mb-3"></i>
+                    <h4 class="card-title">Frameworks & Tools</h4>
+                    <ul class="list-unstyled mt-3">
+                        <li><i class="fas fa-check-circle text-success"></i> <strong>Robot Framework</strong></li>
+                        <li><i class="fas fa-check-circle text-success"></i> <strong>Django</strong></li>
+                        <li><i class="fas fa-check-circle text-success"></i> <strong>Selenium</strong></li>
+                        <li><i class="fas fa-check-circle text-success"></i> <strong>Cypress</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Skills -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm text-center">
+                <div class="card-body">
+                    <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+                    <h4 class="card-title">Additional Skills</h4>
+                    <ul class="list-unstyled mt-3">
+                        <li><i class="fas fa-check-circle text-success"></i> Quality Assurance</li>
+                        <li><i class="fas fa-check-circle text-success"></i> System Integration</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Debugging & Troubleshooting</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Team Collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Links to GitHub and LinkedIn -->
+    <div class="text-center mt-4">
+        <a href="https://github.com/marcelloamr" class="btn btn-dark mx-2" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/marcelloamr/" class="btn btn-primary mx-2" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+    </div>
+
+    <!-- Back to Home Button -->
+    <div class="text-center mt-4">
+        <a href="/" class="btn btn-primary">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+    </div>
+</div>
 {% endblock %}

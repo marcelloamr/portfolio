@@ -3,25 +3,95 @@
 {% block title %}Education{% endblock %}
 
 {% block content %}
-<h1 class="mb-4">Education</h1>
-<ul class="list-group">
-    <li class="list-group-item">
-        <strong>MBA:</strong> Software Quality Management (Jan 2025, UniBF)
-    </li>
-    <li class="list-group-item">
-        <strong>MBA:</strong> System Development with Java (Jan 2025, UniBF)
-    </li>
-    <li class="list-group-item">
-        <strong>MBA:</strong> Information Security (Mar 2022, Descomplica)
-    </li>
-    <li class="list-group-item">
-        <strong>Bachelor's Degree:</strong> Information Technology (Jul 2021, UNIASSELVI)
-    </li>
-    <li class="list-group-item">
-        <strong>Bachelor's Degree:</strong> Mathematics (Dec 2020, Etep University Center)
-    </li>
-</ul>
-<a href="/" class="btn btn-primary mt-4">
-    <i class="fas fa-arrow-left"></i> Back to Home
-</a>
+<div class="container mt-5">
+    <h1 class="text-center mb-5">Education</h1>
+    <div class="row justify-content-center">
+        <!-- UniBF - MBA Software Quality Management -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body d-flex align-items-center">
+                    <i class="fas fa-graduation-cap fa-3x text-primary me-4"></i>
+                    <div>
+                        <h4 class="card-title">UniBF - Instituto Brasileiro de Formação</h4>
+                        <h6 class="text-muted">MBA, Software Quality Management</h6>
+                        <p class="text-secondary"><strong>Expected Completion:</strong> January 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UniBF - MBA System Development with Java -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body d-flex align-items-center">
+                    <i class="fas fa-code fa-3x text-primary me-4"></i>
+                    <div>
+                        <h4 class="card-title">UniBF - Instituto Brasileiro de Formação</h4>
+                        <h6 class="text-muted">MBA, System Development with Java</h6>
+                        <p class="text-secondary"><strong>Expected Completion:</strong> January 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Centro Universitário Descomplica -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body d-flex align-items-center">
+                    <i class="fas fa-shield-alt fa-3x text-primary me-4"></i>
+                    <div>
+                        <h4 class="card-title">Centro Universitário Descomplica</h4>
+                        <h6 class="text-muted">MBA, Information Security</h6>
+                        <p class="text-secondary"><strong>Graduation Date:</strong> March 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UNIASSELVI -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body d-flex align-items-center">
+                    <i class="fas fa-laptop fa-3x text-primary me-4"></i>
+                    <div>
+                        <h4 class="card-title">UNIASSELVI</h4>
+                        <h6 class="text-muted">Bachelor's Degree, Information Technology</h6>
+                        <p class="text-secondary"><strong>Graduation Date:</strong> July 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Etep - Centro Universitário -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body d-flex align-items-center">
+                    <i class="fas fa-calculator fa-3x text-primary me-4"></i>
+                    <div>
+                        <h4 class="card-title">Etep - Centro Universitário</h4>
+                        <h6 class="text-muted">Bachelor's Degree, Mathematics</h6>
+                        <p class="text-secondary"><strong>Graduation Date:</strong> December 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Links to GitHub and LinkedIn -->
+    <div class="text-center mt-4">
+        <a href="https://github.com/marcelloamr" class="btn btn-dark mx-2" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/marcelloamr/" class="btn btn-primary mx-2" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+    </div>
+
+    <!-- Back to Home Button -->
+    <div class="text-center mt-4">
+        <a href="/" class="btn btn-primary">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+    </div>
+</div>
 {% endblock %}
