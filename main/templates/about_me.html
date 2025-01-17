@@ -6,21 +6,23 @@
 
 <div class="text-center">
     <h1 class="mb-4">About Me</h1>
-    <img src="https://github.com/marcelloamr/portfolio/blob/main/main/static/profile.jpeg?raw=true" 
-         alt="Profile Picture" 
-         class="rounded-circle mb-3"
-         style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #007bff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <img src="https://github.com/marcelloamr/portfolio/blob/main/main/static/profile.jpeg?raw=true"
+        alt="Profile Picture" class="rounded-circle mb-3"
+        style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #007bff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
     <p>
-        Hello! I am Marcello Antony, a passionate <strong>QA Engineer</strong> currently working at 
-        <strong>Banco de Brasília (BRB)</strong>. I specialize in testing web applications using tools like 
-        <strong>Selenium</strong> and <strong>Cypress</strong>. With experience in Python and Robot Framework, 
-        I am dedicated to delivering high-quality solutions and ensuring exceptional system performance.
+        Hello! I am Marcello Antony, currently working as a <strong>QA Engineer</strong> at
+        <strong>Banco de Brasília (BRB)</strong>. I specialize in web testing, utilizing tools such as
+        <strong>Selenium</strong>, <strong>Cypress</strong>, and frameworks like <strong>Robot</strong>, alongside
+        programming
+        languages like <strong>Python</strong> and <strong>C</strong>. I bring a unique perspective as an individual
+        with autism,
+        which enhances my concentration, creativity, and dedication.
     </p>
     <p>
-        I enjoy working in inclusive and collaborative environments that encourage innovation and growth.
+        I am passionate about fostering an inclusive environment and thrive in both collaborative and independent roles.
+        My commitment to learning and overcoming challenges drives my contributions to any team.
     </p>
     <div class="d-flex justify-content-center mt-4">
-        <!-- Updated buttons with icons -->
         <a href="/experience/" class="btn btn-primary mx-2">
             <i class="fas fa-briefcase"></i> My Experience
         </a>
@@ -32,12 +34,50 @@
         </a>
     </div>
     <div class="mt-4">
-        <a href="https://github.com/marcelloamr" class="btn btn-dark mx-2">
+        <a href="https://github.com/marcelloamr" class="btn btn-dark mx-2" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github"></i> GitHub
         </a>
-        <a href="https://www.linkedin.com/in/marcelloamr/" class="btn btn-primary mx-2">
+        <a href="https://www.linkedin.com/in/marcelloamr/" class="btn btn-primary mx-2" target="_blank"
+            rel="noopener noreferrer">
             <i class="fab fa-linkedin"></i> LinkedIn
         </a>
     </div>
+    <p class="mt-4">
+        <strong>Contact Information:</strong><br>
+        <!-- WhatsApp Link -->
+        <a href="https://wa.me/5561920023038" target="_blank" rel="noopener noreferrer" class="text-success">
+            <i class="fab fa-whatsapp fa-lg"></i> WhatsApp: +55 61 9 2002 3038
+        </a><br>
+        <!-- Email with Styled Copy Button -->
+        <i class="fas fa-envelope"></i> E-mail:
+        <a href="mailto:marcello.antonymr@gmail.com">marcello.antonymr@gmail.com</a>
+        <button class="btn btn-sm btn-primary ms-2" onclick="copyToClipboard('marcello.antonymr@gmail.com')"
+            style="border-radius: 12px;">
+            <i class="fas fa-copy"></i> Copy
+        </button><br>
+        <!-- Google Maps Miniature -->
+        <i class="fas fa-map-marker-alt"></i> Location:
+        <a href="https://www.google.com/maps?q=Bras%C3%ADlia,+DF,+Brazil" target="_blank" rel="noopener noreferrer">
+            Brasília – DF, Brasil
+        </a>
+    </p>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4372487.239504216!2d-59.92528!3d-14.235004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdd01326b7e6a7%3A0xd36a211b07b1f0a5!2sBrazil!5e0!3m2!1sen!2sbr!4v1673628472985!5m2!1sen!2sbr"
+        width="300" height="200" style="border:0; margin-top: 10px;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+
 </div>
+
+<script>
+    // JavaScript to Copy Email to Clipboard
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(() => {
+            alert('Email copied to clipboard!');
+        }).catch(err => {
+            alert('Failed to copy email: ' + err);
+        });
+    }
+</script>
 {% endblock %}
